@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Volunteer Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
@@ -13,15 +14,14 @@
 
 
 
-  <div>
+  <header>
     <h1>Apply to be a tree planter</h1>
     <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-  </div>
+  </header>
 
   <section>
     <form method="POST" action="https://formspree.io/vill0347@algonquinlive.com">
-    <div class="grid">
-      <div>
+      <div class="grid">
         <h2 class="unit giga xs-1 s-1 m-1 l-1 xl-1">Personal details</h2>
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
           <label for="name">Full name</label>
@@ -57,19 +57,19 @@
           </select>
         </div>
 
-        <div class="unit xs-1 s-1 m-1 l-1 xl-1"v>
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1">
           <label for="email">Email</label>
-          <input id="email" name="email" required>
+          <input id="email" name="email" type="email" required>
         </div>
 
         <div class="unit xs-1 s-1 m-1 l-1 xl-1">
           <label for="number">Phone number <em>(optional)</em></label>
-          <input id="number" name="number" required>
+          <input id="number" name="number" type="tel" required>
         </div>
-        <hr>
+        <hr class="unit max-length">
       </div>
 
-
+      <div class="grid">
         <h2 class="unit xs-1 s-1 m-1 l-1 xl-1">Address</h2>
 
       <div class="unit xs-1 s-1 m-1 l-1 xl-1">
@@ -85,7 +85,7 @@
       <div class="unit xs-1 s-1 m-1 l-1 xl-1">
         <label for="province">Province</label>
         <select id="province" name="province">
-          <option>Select a province</option>
+          <option value="">Select a province</option>
           <option>Alberta</option>
           <option>British Columbia</option>
           <option>Manitoba</option>
@@ -106,8 +106,10 @@
         <label for="postal">Postal code</label>
         <input id="postal" name="postal" required>
       </div>
-      <hr>
+      <hr class="unit max-length">
+    </div>
 
+    <div class="grid">
       <h2 class="unit xs-1 s-1 m-1 l-1 xl-1">What activities are you interested in helping with?</h2>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
         <div>
@@ -143,8 +145,9 @@
         <label for="people">Managing people</label>
       </div>
     </div>
+  </div>
 
-
+    <div class="grid">
       <h2 class="unit xs-1 s-1 m-1 l-1 xl-1">Do you have any experience with the following?</h2>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
         <div>
@@ -189,35 +192,43 @@
       </div>
       <hr>
     </div>
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <h2>Do you have a valid driver’s license?</h2>
+  </div>
+  <div>
+    <fieldset class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+      <legend>Do you have a valid driver’s license?</legend>
       <input id="yes" type="radio" name="license">
       <label for="yes">Yes</label>
 
       <input id="no" type="radio" name="license">
       <label for="no">No</label>
-
-      <h2>Do you have a pick-up truck you’d be willing to use?</h2>
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+      <legend>Do you have a pick-up truck you’d be willing to use?</legend>
       <input id="truck" type="radio" name="agree">
       <label for="truck">Yes</label>
 
       <input id="pick-up" type="radio" name="agree">
       <label for="pick-up">No</label>
-
-      <h2>Do you have up-to-date first-aid certification?</h2>
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+      <legend>Do you have up-to-date first-aid certification?</legend>
       <input id="aid" type="radio" name="disagree">
       <label for="aid">Yes</label>
 
       <input id="certification" type="radio" name="disagree">
       <label for="certification">No</label>
-    </div>
+    </fieldset>
+  </div>
+  <hr>
 
     <div class="unit xs-1 s-1 m-1 l-1 xl-1">
       <label for="message">Please let us know any comments or questions you may have. <em>(optional)</em></label>
       <textarea id="message" name="message" required></textarea>
     </div>
-
     <div>
       <button class="btn gutter-2 mega bold" type="submit">Apply</button>
     </div>
