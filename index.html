@@ -3,15 +3,74 @@
 <head>
   <meta charset="utf-8">
   <title>Volunteer Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
+
+
+  <div>
+    <h1>Apply to be a tree planter</h1>
+    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  </div>
+
   <section>
-    <div>
-      <h1>Apply to be a tree planter</h1>
-      <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-    </div>
-  </section>
+    <form method="POST" action="https://formspree.io/vill0347@algonquinlive.com">
+    <div class="grid">
+      <div>
+        <h2 class="unit giga xs-1 s-1 m-1 l-1 xl-1">Personal details</h2>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required>
+          <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+          <label for="username">What should we call you?</label>
+          <input id="username" name="username" required>
+          <p>What all your friends call you, e.g. “Liz”..</p>
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+          <label for="date">Date of birth</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+          <label for="t-shirt">T-shirt size</label>
+          <select id="t-shirt" name="t-shirt">
+            <option>Select a t-shirt size</option>
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
+          </select>
+        </div>
+
+        <di class="unit xs-1 s-1 m-1 l-1 xl-1"v>
+          <label for="email">Email</label>
+          <input id="email" name="email" required>
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1">
+          <label for="number">Phone number <em>(optional)</em></label>
+          <input id="number" name="number" required>
+        </div>
+      </div>
+        <hr>
+
+      </form>
+    </section>
 
 </body>
 </html>
