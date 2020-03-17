@@ -1,3 +1,89 @@
 html {
-  font-family: "noto serif", serif;
+  font-family: "Noto Serif", serif;
+}
+
+em {
+  color: #70ad55;
+}
+
+header,
+footer {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+hr {
+  border-color: #6e8c62;
+  height: 1px;
+}
+
+input,
+label {
+  border-color: #6e8c62;
+}
+
+select,
+textarea {
+  border-color: #6e8c62;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.btn {
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+  color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .elizabeth,
+  .liz {
+    margin: 0;
+  }
+
+  .name {
+    padding: 0 .5rem 0 0;
+  }
+
+  .username {
+    padding: 0 0 0 .5rem;
+  }
+
+  .birth {
+    padding: 2rem .5rem 1rem 0;
+    margin: 0;
+  }
+
+  .size {
+    padding: 2rem 0 0 .5rem;
+    margin: 0;
+  }
+
+  .email {
+    padding: .7rem .5rem 1rem 0;
+  }
+
+  .number {
+    padding: .7rem 0 1.3rem .5rem;
+  }
+
+  .street {
+    padding: .3rem .5rem 0 0;
+  }
+
+  .city {
+    padding: .3rem 0 0 .5rem;
+  }
+
+  .province {
+    padding: 1.5rem .5rem 0 0;
+  }
+
+  .code {
+    padding: 1.5rem 0 1rem .5rem;
+  }
+
 }
